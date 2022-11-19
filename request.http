@@ -1,0 +1,301 @@
+POST http://localhost:8800/api/auth/register
+Content-Type: application/json
+
+{
+    "username": "ngocdb",
+    "email": "ngocdb@gmail.com",
+    "password": "ngocdb"
+}
+
+###
+
+POST http://localhost:8800/api/auth/login
+Content-Type: application/json
+
+{
+    "email": "tuanpt@gmail.com",
+    "password": "tuanpt"
+}
+
+###
+
+GET http://localhost:8800/api/users/find/633b2d88ea253e919586804d
+Content-Type: application/json
+
+{
+   
+}
+
+###
+
+PUT http://localhost:8800/api/users/633af8bf1128395ae20037e5
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzM2FmOGJmMTEyODM5NWFlMjAwMzdlNSIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE2NjQ4MTcwODAsImV4cCI6MTY2NTI0OTA4MH0.1NVaR7BXrbfrl7DeqDybepyExxSqCinDKCCmp77aVAI
+
+{
+    "isAdmin": "false"
+}
+
+###
+
+DELETE  http://localhost:8800/api/users/633b1e9130add3a87e2d36a3
+Content-Type: application/json
+Authorization: Bearer
+
+{
+
+}
+
+###
+
+GET  http://localhost:8800/api/users/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzM2IyZDg4ZWEyNTNlOTE5NTg2ODA0ZCIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY2NDgyMzU1NCwiZXhwIjoxNjY1MjU1NTU0fQ.GgrUrXfh63HXIGRc3h8K3YigfW9OkBMSu47yBqTjg0I
+
+{
+
+}
+
+###
+
+GET  http://localhost:8800/api/users/stats
+Content-Type: application/json
+
+{
+
+}
+
+###
+
+POST http://localhost:8800/api/movies
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzM2IyZDg4ZWEyNTNlOTE5NTg2ODA0ZCIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY2NDgyMzU1NCwiZXhwIjoxNjY1MjU1NTU0fQ.GgrUrXfh63HXIGRc3h8K3YigfW9OkBMSu47yBqTjg0I
+
+{
+    "title": "Death on the Nile 5",
+    "desc": "Án mạng trên sông Nile",
+    "img": "https://firebasestorage.googleapis.com/v0/b/movie-web-fadf1.appspot.com/o/poster%2Fdeath-on-the-nile.jpeg?alt=media&token=40b7b86a-61d4-42bd-bcf6-97b003d6565e",
+    "imgTitle": "https://firebasestorage.googleapis.com/v0/b/movie-web-fadf1.appspot.com/o/title%2Fdeath-on-the-nile.webp?alt=media&token=1ebe5320-a19b-4442-aa1f-e813d9dbf079",
+    "trailer": "https://firebasestorage.googleapis.com/v0/b/movie-web-fadf1.appspot.com/o/trailer%2FOfficial%20Trailer%20-%20Death%20on%20the%20Nile%20-%2020th%20Century%20Studios.mp4?alt=media&token=1e0fc5d8-225c-40eb-b1f7-67422e96eea3",
+    "epNum": 1,
+    "year": "2022",
+    "limit": 16,
+    "genre": "Giật gân",
+    "rate": 6.3,
+    "isSeries": true
+}
+
+###
+
+GET http://localhost:8800/api/movies/find/633b49f1335bd464c00e6c59
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzM2IyZDg4ZWEyNTNlOTE5NTg2ODA0ZCIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY2NDgyMzU1NCwiZXhwIjoxNjY1MjU1NTU0fQ.GgrUrXfh63HXIGRc3h8K3YigfW9OkBMSu47yBqTjg0I
+
+{
+
+}
+
+###
+
+DELETE http://localhost:8800/api/movies/633b49f1335bd464c00e6c59
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzM2IyZDg4ZWEyNTNlOTE5NTg2ODA0ZCIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY2NDgyMzU1NCwiZXhwIjoxNjY1MjU1NTU0fQ.GgrUrXfh63HXIGRc3h8K3YigfW9OkBMSu47yBqTjg0I
+
+{
+
+}
+
+###
+
+POST http://localhost:8800/api/lists
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzM2IyZDg4ZWEyNTNlOTE5NTg2ODA0ZCIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY2NDgyMzU1NCwiZXhwIjoxNjY1MjU1NTU0fQ.GgrUrXfh63HXIGRc3h8K3YigfW9OkBMSu47yBqTjg0I
+
+{
+    "title": "Phim trinh thám hay nhất 3",
+    "type": "series",
+    "genre": "trinh thám",
+    "content": ["633dc52cf611a788116b43dc", "633dc52cf611a788116b43dc", "633dc52cf611a788116b43dc"]
+}
+
+###
+
+GET http://localhost:8800/api/lists?type=movie&genre=Giật gân
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzM2IyZDg4ZWEyNTNlOTE5NTg2ODA0ZCIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY2NDgyMzU1NCwiZXhwIjoxNjY1MjU1NTU0fQ.GgrUrXfh63HXIGRc3h8K3YigfW9OkBMSu47yBqTjg0I
+
+{
+    
+}
+
+###
+
+GET http://localhost:8800/api/movies
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzM2IyZDg4ZWEyNTNlOTE5NTg2ODA0ZCIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY2NDgyMzU1NCwiZXhwIjoxNjY1MjU1NTU0fQ.GgrUrXfh63HXIGRc3h8K3YigfW9OkBMSu47yBqTjg0I
+
+{
+
+}
+
+
+###
+
+POST http://localhost:8800/api/eps
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzM2IyZDg4ZWEyNTNlOTE5NTg2ODA0ZCIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY2NDgyMzU1NCwiZXhwIjoxNjY1MjU1NTU0fQ.GgrUrXfh63HXIGRc3h8K3YigfW9OkBMSu47yBqTjg0I
+
+{
+    "title": "Doctor Strange in Multiverse of Madness",
+    "desc": "Phù thủy tối thượng trong đa vũ trụ hỗn loạn",
+    "ep": 1,
+    "video": "https://firebasestorage.googleapis.com/v0/b/movie-web-fadf1.appspot.com/o/trailer%2F1664992527865Official%20Trailer%20-%20Death%20on%20the%20Nile%20-%2020th%20Century%20Studios.mp4?alt=media&token=0c45ca1d-589b-4978-9ef4-fc88223cf1d2",
+    "duration": "2g 08p",
+    "movie": "633dd3e4f611a788116b43e7"
+}
+
+###
+
+
+GET http://localhost:8800/api/eps/list/633dd3e4f611a788116b43e7
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzM2IyZDg4ZWEyNTNlOTE5NTg2ODA0ZCIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY2NDgyMzU1NCwiZXhwIjoxNjY1MjU1NTU0fQ.GgrUrXfh63HXIGRc3h8K3YigfW9OkBMSu47yBqTjg0I
+
+{
+   
+}
+
+###
+
+POST http://localhost:8800/api/actors
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzM2IyZDg4ZWEyNTNlOTE5NTg2ODA0ZCIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY2NTIxMjQ5NSwiZXhwIjoxNjY1NjQ0NDk1fQ.C_ZGyYxKuuKp14FN9Fev31Zw_kJYv6KqkS7c-qI-TYA
+
+{
+    "name": "Gal Gadot",
+    "dob": "1995-12-05",
+    "img": "https://firebasestorage.googleapis.com/v0/b/movie-web-fadf1.appspot.com/o/actor%2Fgal-gadot.jpg?alt=media&token=759ebb13-06e2-4480-b094-887ff5d57925",
+    "desc": "Gal Gadot"
+}
+
+
+###
+
+PUT http://localhost:8800/api/actorMovie/63414ea066a70c722e70ea19
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzM2IyZDg4ZWEyNTNlOTE5NTg2ODA0ZCIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY2NTIxMjQ5NSwiZXhwIjoxNjY1NjQ0NDk1fQ.C_ZGyYxKuuKp14FN9Fev31Zw_kJYv6KqkS7c-qI-TYA
+
+{
+    "character": "Doctor Strange"
+}
+
+
+
+###
+
+GET http://localhost:8800/api/actorMovie/list/633dd3e4f611a788116b43e7
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzM2IyZDg4ZWEyNTNlOTE5NTg2ODA0ZCIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY2NTIxMjQ5NSwiZXhwIjoxNjY1NjQ0NDk1fQ.C_ZGyYxKuuKp14FN9Fev31Zw_kJYv6KqkS7c-qI-TYA
+
+{
+
+}
+
+###
+
+POST http://localhost:8800/api/eps
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzM2IyZDg4ZWEyNTNlOTE5NTg2ODA0ZCIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY2NTIxMjQ5NSwiZXhwIjoxNjY1NjQ0NDk1fQ.C_ZGyYxKuuKp14FN9Fev31Zw_kJYv6KqkS7c-qI-TYA
+
+{
+    "movie": "633dc3b4f611a788116b43d8",
+    "ep": "1",
+    "title": "Nope 1",
+    "desc": "Nope tập 1",
+    "video": "https://firebasestorage.googleapis.com/v0/b/movie-web-fadf1.appspot.com/o/video%2F633dc3b4f611a788116b43d8%2F1665247770721NOPE%20-%20Official%20Trailer.mp4?alt=media&token=d4822c5d-d434-4e2a-b8d3-32d5cec58912"
+}
+
+###
+
+POST http://localhost:8800/api/userRating
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzM2U4YmEyYmMzYTQwMzkxZGI0NWE1YyIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE2NjUxNjA4MDMsImV4cCI6MTY2NTU5MjgwM30.sA74unLHUV02FTVUtjVyQOOeSUZ-r2xW_jfwYo3iJXQ
+
+{
+    "movie": "633dc3b4f611a788116b43d8",
+    "user": "633e900bbc3a40391db45a7f",
+    "rating": 5
+}
+
+###
+
+POST http://localhost:8800/api/service
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzM2U4YmEyYmMzYTQwMzkxZGI0NWE1YyIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE2NjUxNjA4MDMsImV4cCI6MTY2NTU5MjgwM30.sA74unLHUV02FTVUtjVyQOOeSUZ-r2xW_jfwYo3iJXQ
+
+{
+    "name": "Cao cấp",
+    "desc": "Độ phân giải 4K+HDR",
+    "price": 260000
+}
+
+###
+
+GET http://localhost:8800/api/trending/find
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzM2U4YmEyYmMzYTQwMzkxZGI0NWE1YyIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE2NjY3Nzg2OTAsImV4cCI6MTY2NzIxMDY5MH0.SzMFU1OL_bHhyyfQ8V8F9TwdeOHcQyAthbSCCpwuaao
+
+{
+    
+}
+
+
+###
+
+GET http://localhost:8800/api/recommend/findByMovie/6354e362c834f95698ef0221
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzM2U4YmEyYmMzYTQwMzkxZGI0NWE1YyIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE2NjYyNzE4NzMsImV4cCI6MTY2NjcwMzg3M30.ygC-x-D8EkWmnhICxYMoxXy1GjLIim2lJwS1ExOqNFE
+
+{
+    
+}
+
+###
+
+GET http://localhost:8800/api/recommend/findByUser
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzM2U5MDBiYmMzYTQwMzkxZGI0NWE3ZiIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE2NjY2MDIzNDksImV4cCI6MTY2NzAzNDM0OX0.pFA7kwPqX-tqdKxY-eK5h7NLNl5JaLSfyIoiwwgefB0
+
+{
+    
+}
+
+###
+
+GET http://localhost:8800/api/movies/search?q=Wanda
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzM2U4YmEyYmMzYTQwMzkxZGI0NWE1YyIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE2NjY3Nzg2OTAsImV4cCI6MTY2NzIxMDY5MH0.SzMFU1OL_bHhyyfQ8V8F9TwdeOHcQyAthbSCCpwuaao
+
+{
+    
+}
+
+
+###
+
+GET http://localhost:8800/api/users/bymonth
+Content-Type: application/json
+
+{
+    
+}
+
+###
+
+GET http://localhost:8800/api/payment/stats
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzM2FmOGJmMTEyODM5NWFlMjAwMzdlNSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY2ODM1MzIxMywiZXhwIjoxNjY4Nzg1MjEzfQ.j_aU_s0CQqlKs85yFwcntXHEAEBuwwjF_i1Hm_9833M
+
+{
+    
+}
