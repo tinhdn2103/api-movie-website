@@ -93,7 +93,7 @@ const trending = async () => {
         },
       },
     ]);
-    const py = spawn("python", ["trendingList.py"]);
+    const py = spawn("python3", ["trendingList.py"]);
     py.stdout.on("data", (data) => {
       console.log(`stdout: ${data}`);
     });
