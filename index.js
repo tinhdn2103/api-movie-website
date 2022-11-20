@@ -111,7 +111,7 @@ const trending = async () => {
 
 mongoose.connection.on("connected", () => {
   trending();
-  // setInterval(trending, 90000);
+  //// setInterval(trending, 90000);
 });
 
 app.use(express.json());
