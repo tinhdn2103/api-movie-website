@@ -299,3 +299,33 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzM2FmOGJmM
 {
     
 }
+
+###
+
+GET https://api-movie-website-bva3oj79f-tinhdn2103.vercel.app/api/lists
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNzk4NTFhNWQxZDY4YmQ3ZDBlNWQyYiIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE2Njg5MDgzNTAsImV4cCI6MTY2OTM0MDM1MH0.d_rZaVQXTZNv3R5_YP8_a569cbi9l6pbaRuP2rSQUyA
+
+{
+    
+}
+
+###
+
+GET https://api-movie-website-bva3oj79f-tinhdn2103.vercel.app/api/movies/find/633dc52cf611a788116b43dc
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNzk4NTFhNWQxZDY4YmQ3ZDBlNWQyYiIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE2Njg5MDgzNTAsImV4cCI6MTY2OTM0MDM1MH0.d_rZaVQXTZNv3R5_YP8_a569cbi9l6pbaRuP2rSQUyA
+
+{
+    
+}
+
+###
+
+GET http://localhost:8800/api/recommend/findByCB
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzM2U5MDBiYmMzYTQwMzkxZGI0NWE3ZiIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE2Njg5NjAzODEsImV4cCI6MTY2OTM5MjM4MX0.8biWYbuc3ztEzw7ak1Dh5uusZecACoon78J2W0GjNko
+
+{
+    
+}

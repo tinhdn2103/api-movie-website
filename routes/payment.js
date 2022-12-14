@@ -17,7 +17,7 @@ paypal.configure({
   client_secret:
     "EGFQxwVVcVSV6Oha_cBI_OiLr3zhBQe0KZI8uNzDDV3OjNCOkRHtIEjY7sl6ovresBfB5ScEC3n1N_Cg",
 });
-let value;
+let value; // có vấn đề
 router.post("/", verify, async (req, res) => {
   value = req.body;
 

@@ -11,6 +11,18 @@ router.post("/", verify, async (req, res) => {
     const newMovie = new Movie(req.body);
     try {
       const savedMovie = await newMovie.save();
+
+      const py = spawn("python", ["vectorizerMovie.py"]);
+      py.stdout.on("data", async (data) => {
+        console.error(`stdout: ${data}`);
+      });
+      py.stderr.on("data", (data) => {
+        console.error(`stderr: ${data}`);
+      });
+      py.on("close", (code) => {
+        console.log(`child process exited with code ${code}`);
+      });
+
       res.status(201).json(savedMovie);
     } catch (err) {
       res.status(500).json(err);
